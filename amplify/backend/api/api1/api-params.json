@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/api1",
+            "lambdaFunction": "lambda1",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api1",
+    "apiName": "api1",
+    "functionArns": [
+        {
+            "lambdaFunction": "lambda1"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-awsapigateway-awsgw-135612-authRole",
+        "unAuthRoleName": "amplify-awsapigateway-awsgw-135612-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "lambda1",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
